@@ -1,0 +1,87 @@
+Car_Title,KM,Type_of_Transmission,Carmax_Warranty,Seats,Fuel_Type,Plate_Number,Unit_Price,Downpayment_20_Percent,Downpayment_20_Percent_24_Months,Features_Description,Current_Damages,Modifications,Enchancements,Overheating,Engine_Trouble,Battery_Replaced,Windows_Front_Left,Windows_Front_Right,Windows_Rear_Left,Windows_Rear_Right,Glasses_Windshield,Glasses_Backshield,Glasses_Side_Mirror_Lens,Lights_Front_Left,Lights_Front_Right,Lights_Rear_Left,Lights_Rear_Right,Lights_Fog_Lamps,Brake_Lights,Tire_Thread_Life_Front_Left,Tire_Thread_Life_Front_Right,Tire_Thread_Life_Rear_Left,Tire_Thread_Life_Rear_Right,Tire_Thread_Life_Spare_Tire,Tire_Thread_Life_Spare_Tire_Condition,Door_Handles_Front_Left,Door_Handles_Front_Right,Door_Handles_Rear_Left,Door_Handles_Rear_Right,Door_Handles_Trunk_Backdoor,Interior_Conditions_Upholstery,Interior_Conditions_Dashboard_Control,Interior_Conditions_Dashboard_Lights,Interior_Conditions_Stereo,Interior_Conditions_Speaker,Interior_Conditions_Cigarette_Lighter,Interior_Conditions_Aircon_Coolness,Interior_Conditions_Fan_Strength,Drive_and_Engine_Condition_Hard_Start,Drive_and_Engine_Condition_Shift_Lag,Drive_and_Engine_Condition_Unusual_Noises,Drive_and_Engine_Condition_Unusual_Noises_Source,Drive_and_Engine_Condition_Ease_of_Turn,Drive_and_Engine_Condition_Brake_Responsiveness,Drive_and_Engine_Condition_Top_Engine_Leak,Drive_and_Engine_Condition_Oil_Splatter_Smoke,Drive_and_Engine_Condition_Coolant_Level,Drive_and_Engine_Condition_Brake_Fluid,Drive_and_Engine_Condition_Engine_Oil_Color,Engine_Oil_Texture
+2021 TOYOTA RUSH,10.6K,Automatic,30-Day Engine and Transmission Warranty,7,Gas,xxxx4,"₱890,000","₱259,880.00","₱40,524.67","Toyota Rush 1.5 G
+Automatic
+7-8 seaters
+Low mileage",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,Without,N/A,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2020 HYUNDAI KONA,35.1K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx7,"₱720,000","₱210,240.00","₱32,784.00",NA,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,Without,N/A,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Fair,Fair,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2021 FORD TERRITORY,43.3K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx1,"₱900,000","₱262,800.00","₱40,980.00","Negotiable
+5 Seater Car
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,90-100%,90-100%,90-100%,90-100%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Excellent,Excellent,No,No,No,N/A,Very Easy,Very Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2013 TOYOTA FORTUNER,90K,Automatic,30-Day Engine and Transmission Warranty,7,Diesel,xxxx2,"₱788,000","₱230,096.00","₱35,880.27",2013 TOYOTA FORTUNER #2050152,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2010 HONDA CITY,100K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx6,"₱230,000","₱67,160.00","₱10,472.67","2010 HONDA CITY							
+#NQW556",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2019 TOYOTA WIGO,100K,Automatic,1-Year Engine and Transmission Warranty,5,Gas,xxxx1,"₱440,000","₱128,480.00","₱20,034.67",2019 Toyota Wigo G Automatic,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2018 TOYOTA INNOVA,100K,Automatic,1-Year Engine and Transmission Warranty,7,Diesel,xxxx4,"₱850,000","₱248,200.00","₱38,703.33","2018 Toyota Innova E Diesel Automatic
+7 seaters",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,50%,50%,50%,50%,With,50%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2018 TOYOTA INNOVA,100K,Automatic,30-Day Engine and Transmission Warranty,7,Diesel,xxxx1,"₱840,000","₱245,280.00","₱38,248.00","2018 Toyota Innova E Diesel Automatic
+7 Seaters",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,50%,50%,50%,50%,With,50%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2019 NISSAN TERRA,100K,Automatic,1-Year Engine and Transmission Warranty,0,Diesel,xxxx7,"₱940,000","₱274,480.00","₱42,801.33",2019 Nissan Terra Automatic,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,50%,50%,50%,50%,With,50%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2016 TOYOTA WIGO,70K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx9,"₱440,000","₱128,480.00","₱20,034.67",2016 Toyota Wigo A/T,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2019 MAZDA CX-5,60K,Automatic,1-Year Engine and Transmission Warranty,5,Gas,xxxx7,"₱1,090,000","₱318,280.00","₱49,631.33",2019 Mazda CX5 A/T,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2018 TOYOTA FORTUNER,100K,Automatic,1-Year Engine and Transmission Warranty,8,Gas,xxxx5,"₱1,090,000","₱318,280.00","₱49,631.33",2018 Toyota Fortuner G A/T,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2017 TOYOTA FORTUNER,60K,Automatic,1-Year Engine and Transmission Warranty,8,Diesel,xxxx9,"₱1,090,000","₱318,280.00","₱49,631.33",2017 Toyota Fortuner G DSL A/T,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2018 HONDA CR-V,100K,Automatic,1-Year Engine and Transmission Warranty,8,Diesel,xxxx0,"₱1,090,000","₱318,280.00","₱49,631.33",2018 Honda CRV V DSL A/T,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2014 NISSAN GRAND LIVINA,100K,Automatic,1-Year Engine and Transmission Warranty,8,Gas,xxxx3,"₱440,000","₱128,480.00","₱20,034.67",2014 Nissan Grand Livina AT,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2017 TOYOTA INNOVA,70K,Manual,1-Year Engine and Transmission Warranty,8,Gas,xxxx4,"₱690,000","₱201,480.00","₱31,418.00",2017 Toyota Innova Manual,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,90-100%,90-100%,90-100%,90-100%,With,90-100%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2017 TOYOTA CAMRY,71K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx3,"₱890,000","₱259,880.00","₱40,524.67",NA,None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,90-100%,90-100%,90-100%,90-100%,Without,N/A,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Fair,Fair,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2013 Mazda CX7,91K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx2,"₱410,000","₱119,720.00","₱18,668.67","Negotiable
+5 Seater Car
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,90-100%,90-100%,90-100%,90-100%,With,80%,Good,Good,Good,Good,Good,Leather,Digital,Good,Functional/Original,Functional/Original,Good,Excellent,Excellent,No,No,No,N/A,Very Easy,Very Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2018 Nissan Navara,149.6K,Automatic,30-Day Engine and Transmission Warranty,5,Diesel,xxxx6,"₱845,000","₱246,740.00","₱38,475.67","Negotiable
+5 Seater Car
+First Owner
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension","Fender(LF)- Major Damage, Fender(LB)- Minor Damage, Fender(RB)- Minor Damage",None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Cracks/Breaks,Cracks/Breaks,Good,Cracks/Breaks,50%,50%,50%,50%,With,50%,Good,Good,Good,Good,Good,Fabric,Rotary,Good,Functional/Original,Functional/Original,Good,Very Good,Very Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Maximum,Maximum,Yellow,Thin
+2015 Honda Mobilio,92K,Manual,30-Day Engine and Transmission Warranty,7,Gas,xxxx5,"₱490,000","₱143,080.00","₱22,311.33","Family Car
+First Owner
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension",N/A,N/A,N/A,No,No,No,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,N/A,n/a,n/a,N/A,N/A,N/A,No,No,No,N/A,N/A,N/A,No,No,N/A,N/A,N/A,N/A
+2020 Foton Traveller,23K,Manual,30-Day Engine and Transmission Warranty,20,Diesel,xxxx1,"₱1,390,000","₱405,880.00","₱63,291.33","Negotiable
+Family Car
+First Owner
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Fabric,Rotary,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Above Minimum,Above Minimum,Amber,Thin
+2015 Toyota Vios,80.9K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx8,"₱490,000","₱143,080.00","₱22,311.33","Negotiable
+5-Seater Car
+First Owner
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,Without,0-29%,Good,Good,Good,Good,Good,Fabric,Rotary,Good,Functional/Original,Functional/Original,Good,Good,Good,No,No,Yes,N/A,Relatively Easy,Responsive,No,No,Above Minimum,Above Minimum,Yellow,Thin
+2001 Mercedes Benz E240,78.1K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx7,"₱400,000",N/A,N/A,"Negotiable
+5-Seater Car
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair
+OR / CR Included
+None Pending Apprehension",None,None,None,No,No,No,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,80%,80%,80%,80%,With,80%,Good,Good,Good,Good,Good,Leather,Rotary,Good,Functional/Original,Functional/Original,Good,Poor,Poor,No,No,No,N/A,Relatively Easy,Responsive,No,No,Above Minimum,Above Minimum,Dark Brown,Thick
+2013 Honda City,96.9K,Automatic,30-Day Engine and Transmission Warranty,5,Gas,xxxx3,"₱385,000","₱112,420.00","₱17,530.33","Negotiable
+5-Seater Car
+First Owner
+Well-Maintained
+Good Mileage
+No Major Engine Repair
+No Major Body Repair",Fender(RF)- Minor Damage,None,None,No,No,Yes,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,Good,50%,50%,50%,50%,With,80%,Good,Good,Good,Good,Good,Fabric,Rotary,Good,Functional/Original,Functional/Original,Damaged/Missing,Very Good,Good,No,No,No,N/A,Relatively Easy,Responsive,No,No,Above Minimum,Above Minimum,Dark Brown,Thick
