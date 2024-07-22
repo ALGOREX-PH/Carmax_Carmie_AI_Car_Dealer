@@ -1,18 +1,23 @@
 import os
 import openai
 import pandas as pd
-from apikey import openai_api_key
 import streamlit as st
 import warnings
 from streamlit_option_menu import option_menu
 from streamlit_extras.mention import mention
 warnings.filterwarnings("ignore")
-openai.api_key = openai_api_key
+
 
 st.set_page_config(page_title="Carmie by Generative Labs", page_icon=":car:", layout="wide")
 
 with st.sidebar :
     st.title("Generative Labs")
+
+    openai.api_key = st.text_input('Enter OpenAI API token:', type='password')
+    if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
+        st.warning('Please enter your credentials!', icon='⚠️')
+    else:
+        st.success('Proceed to entering your prompt message!', icon='👉')
     with st.container() :
         l, m, r = st.columns((1, 3, 1))
         with l : st.empty()
@@ -95,25 +100,20 @@ The Current Product List is limited as below:
 
 
 
-     # Display chat messages from history on app rerun
      for x in range(1, len(st.session_state.messages)):
          with st.chat_message(st.session_state.messages[x]["role"]):
              st.markdown(st.session_state.messages[x]["content"])
 
      if prompt := st.chat_input("Say something"):
-        # Display user message in chat message container
         with st.chat_message("user"):
              st.markdown(prompt)
-        # Add user message to chat history
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         chat =  openai.ChatCompletion.create(model = "gpt-4o-mini", messages = st.session_state.messages)
         response = chat.choices[0].message.content
 
-        # Display assistant response in chat message container
         with st.chat_message("assistant"):
              st.markdown(response)
-        # Add assistant response to chat history
         st.session_state.messages.append({"role": "assistant", "content": response})
 
         print(st.session_state.messages)
