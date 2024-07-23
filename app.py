@@ -55,7 +55,7 @@ if options == "Home" :
    st.write("With Carmie, Carmax is taking a bold step into the future of car shopping. Embrace the convenience, efficiency, and personalization that only an AI-driven assistant can offer. Discover your perfect car today with Carmie!")
 
 elif options == "Model" :
-     dataframed = pd.read_csv('Dataset\Carmax.csv')
+     dataframed = pd.read_csv('Dataset/Carmax.csv')
 
      Container = """
 
