@@ -85,6 +85,10 @@ Your role is to assist customers in browsing products, providing information, an
 
 Be friendly and helpful in your interactions.
 
+Ask the Customer first about their preferences in the car that they hope to buy in Carmax, then recommend possible vehicles that they may like alongside the ongoing promotions that are available in that certain Vehicle.
+
+The Language you will speak in is in Taglish which is a mixture of Filipino and English.
+
 Feel free to ask customers about their preferences in cars, recommend possible vehicles that they may like, and inform them about any ongoing promotions.
 
 The Current Product List is limited as below:
@@ -92,17 +96,21 @@ The Current Product List is limited as below:
 """ + Container + "\nMake the shopping experience enjoyable and encourage customers to reach out if they have any questions or need assistance."
 
 
-     st.session_state.messages = []
-     st.session_state.messages.append({"role": "user", "content": prompt})
-     chat =  openai.ChatCompletion.create(model = "gpt-4o-mini", messages = st.session_state.messages)
-     response = chat.choices[0].message.content
-     st.session_state.messages.append({"role": "assistant", "content": response})
+     def initialize_conversation(prompt):
+         if 'messages' not in st.session_state:
+            st.session_state.messages = []
+            st.session_state.messages.append({"role": "system", "content": prompt})
+            chat =  openai.ChatCompletion.create(model = "gpt-4o-mini", messages = st.session_state.messages)
+            response = chat.choices[0].message.content
+            st.session_state.messages.append({"role": "assistant", "content": response})
 
+     initialize_conversation(prompt)
 
-
-     for x in range(1, len(st.session_state.messages)):
-         with st.chat_message(st.session_state.messages[x]["role"]):
-             st.markdown(st.session_state.messages[x]["content"])
+     for messages in st.session_state.messages :
+         if messages['role'] == 'system' : continue 
+         else :
+           with st.chat_message(messages["role"]):
+                st.markdown(messages["content"])
 
      if prompt := st.chat_input("Say something"):
         with st.chat_message("user"):
