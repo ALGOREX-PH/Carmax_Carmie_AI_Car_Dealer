@@ -1,10 +1,23 @@
 import os
 import openai
+import numpy as np
 import pandas as pd
+import json
+from langchain.chat_models import ChatOpenAI
+from langchain.document_loaders import CSVLoader
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.prompts import ChatPromptTemplate
+from langchain.vectorstores import Chroma
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableLambda, RunnablePassthrough
+from openai.embeddings_utils import get_embedding
+import faiss
 import streamlit as st
 import warnings
 from streamlit_option_menu import option_menu
 from streamlit_extras.mention import mention
+
+
 warnings.filterwarnings("ignore")
 
 
@@ -40,7 +53,7 @@ with st.sidebar :
 if options == "Home" :
    st.title("Introducing Carmie: Carmax's AI Car Dealer")
    st.write("We are thrilled to introduce you to Carmie, Carmax's very own AI Car Dealer. Carmie is here to revolutionize your car-buying experience with cutting-edge technology and unparalleled convenience.")
-   st.write("# What is Carmie?")
+   st.write("# Who is Carmie?")
    st.write("Carmie is an intelligent AI-powered assistant designed to make your car shopping journey smooth, personalized, and enjoyable. Whether you’re looking to buy your first car, upgrade to a newer model, or simply explore options, Carmie is here to assist you every step of the way.")
    st.write("# How Can Carmie Help You?")
    st.write("1. Personalized Recommendations: Carmie analyzes your preferences, budget, and needs to recommend the best vehicles for you.")
@@ -55,31 +68,18 @@ if options == "Home" :
    st.write("With Carmie, Carmax is taking a bold step into the future of car shopping. Embrace the convenience, efficiency, and personalization that only an AI-driven assistant can offer. Discover your perfect car today with Carmie!")
 
 elif options == "Model" :
-     dataframed = pd.read_csv('https://raw.githubusercontent.com/ALGOREX-PH/Carmax_Carmie_AI_Car_Dealer/main/Dataset/Carmax.csv')
+     dataframed = pd.read_excel('./Dataset/Carmax Inventory 7_6_24.xlsx')
+     dataframed['Car_Title'] = dataframed['make'] + "_" + dataframed['model']
+     dataframed['combined'] = dataframed.apply(lambda row : ' '.join(row.values.astype(str)), axis = 1)
+     documents = dataframed['combined'].tolist()
+     embeddings = [get_embedding(doc, engine = "text-embedding-ada-002") for doc in documents]
+     embedding_dim = len(embeddings[0])
+     embeddings_np = np.array(embeddings).astype('float32')
+     index = faiss.IndexFlatL2(embedding_dim)
+     index.add(embeddings_np)
 
-     Container = """
-
-     # Carmax Dealership Car List
-    
-     """
-     columns = dataframed.columns
-
-     for x in range(0, len(dataframed)) :
-         temp = ""
-         for y in range(0, len(columns)) :
-             if y == 0 :
-                temp += ("- " + str(dataframed.iloc[x]['Car_Title']))
-                temp += "\n"
-             elif columns[y] == "Features_Description" : continue
-             else : 
-                temp += ("  - " + str(columns[y]) + ": " + str(dataframed.iloc[x][columns[y]]))
-                temp += "\n"
-         Container += temp
-
-     Container += temp
-
-     prompt = """
-You are Carmie, an AI Car Dealer for my online Car Dealership - Carmax PH.
+     System_Prompt = """
+You are Carmie, an AI Car Dealer for the online Car Dealership - Carmax PH.
 
 Your role is to assist customers in browsing products, providing information, and guiding them through the checkout process. Be friendly and helpful in your interactions.
 
@@ -107,12 +107,12 @@ Feel free to ask customers about their preferences in cars, recommend possible v
      def initialize_conversation(prompt):
          if 'messages' not in st.session_state:
             st.session_state.messages = []
-            st.session_state.messages.append({"role": "system", "content": prompt})
-            chat =  openai.ChatCompletion.create(model = "gpt-4o-mini", messages = st.session_state.messages)
+            st.session_state.messages.append({"role": "system", "content": System_Prompt})
+            chat =  openai.ChatCompletion.create(model = "ft:gpt-3.5-turbo-0125:personal:carmie-3:9sTpPqlH", messages = st.session_state.messages, temperature=0.5, max_tokens=1500, top_p=1, frequency_penalty=0, presence_penalty=0)
             response = chat.choices[0].message.content
             st.session_state.messages.append({"role": "assistant", "content": response})
 
-     initialize_conversation(prompt)
+     initialize_conversation(System_Prompt)
 
      for messages in st.session_state.messages :
          if messages['role'] == 'system' : continue 
@@ -120,16 +120,18 @@ Feel free to ask customers about their preferences in cars, recommend possible v
            with st.chat_message(messages["role"]):
                 st.markdown(messages["content"])
 
-     if prompt := st.chat_input("Say something"):
+     if user_message := st.chat_input("Say something"):
         with st.chat_message("user"):
-             st.markdown(prompt)
-        st.session_state.messages.append({"role": "user", "content": prompt})
-
-        chat =  openai.ChatCompletion.create(model = "gpt-4o-mini", messages = st.session_state.messages)
+             st.markdown(user_message)
+        query_embedding = get_embedding(user_message, engine='text-embedding-ada-002')
+        query_embedding_np = np.array([query_embedding]).astype('float32')
+        _, indices = index.search(query_embedding_np, 5)
+        retrieved_docs = [documents[i] for i in indices[0]]
+        context = ' '.join(retrieved_docs)
+        structured_prompt = f"Context:\n{context}\n\nQuery:\n{user_message}\n\nResponse:"
+        chat =  openai.ChatCompletion.create(model = "ft:gpt-3.5-turbo-0125:personal:carmie-3:9sTpPqlH", messages = st.session_state.messages + [{"role": "user", "content": structured_prompt}], temperature=0.5, max_tokens=1500, top_p=1, frequency_penalty=0, presence_penalty=0)
+        st.session_state.messages.append({"role": "user", "content": user_message})
         response = chat.choices[0].message.content
-
         with st.chat_message("assistant"):
              st.markdown(response)
         st.session_state.messages.append({"role": "assistant", "content": response})
-
-        print(st.session_state.messages)
