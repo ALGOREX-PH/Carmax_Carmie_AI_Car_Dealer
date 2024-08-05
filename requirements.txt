@@ -8,3 +8,4 @@ openpyxl
 langchain
 langchain_community
 scipy
+sklearn
