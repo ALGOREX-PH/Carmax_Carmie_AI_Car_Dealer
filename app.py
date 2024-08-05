@@ -68,7 +68,7 @@ if options == "Home" :
    st.write("With Carmie, Carmax is taking a bold step into the future of car shopping. Embrace the convenience, efficiency, and personalization that only an AI-driven assistant can offer. Discover your perfect car today with Carmie!")
 
 elif options == "Model" :
-     dataframed = pd.read_excel('./Dataset/Carmax Inventory 7_6_24.xlsx')
+     dataframed = pd.read_excel('https://raw.githubusercontent.com/ALGOREX-PH/Carmax_Carmie_AI_Car_Dealer/main/Dataset/Carmax%20Inventory%207_6_24.xlsx')
      dataframed['Car_Title'] = dataframed['make'] + "_" + dataframed['model']
      dataframed['combined'] = dataframed.apply(lambda row : ' '.join(row.values.astype(str)), axis = 1)
      documents = dataframed['combined'].tolist()
