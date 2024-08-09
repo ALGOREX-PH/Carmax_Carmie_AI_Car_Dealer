@@ -17,18 +17,17 @@ import warnings
 from streamlit_option_menu import option_menu
 from streamlit_extras.mention import mention
 
+# Created by Danielle Bagaforo Meer (Algorex)
+# LinkedIn : https://www.linkedin.com/in/algorexph/
 
 warnings.filterwarnings("ignore")
-
-
 st.set_page_config(page_title="Carmie by Generative Labs", page_icon=":car:", layout="wide")
 
 with st.sidebar :
-    st.title("Generative Labs")
-
+    st.image("images/carmax-logo.webp")
     openai.api_key = st.text_input('Enter OpenAI API token:', type='password')
     if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
-        st.warning('Please enter your credentials!', icon='⚠️')
+        st.warning('Please enter your OpenAI API token!', icon='⚠️')
     else:
         st.success('Proceed to entering your prompt message!', icon='👉')
     with st.container() :
@@ -40,7 +39,7 @@ with st.sidebar :
     options = option_menu(
         "Dashboard", 
         ["Home", "Model"],
-        icons = ['book', 'tools'],
+        icons = ['house', 'tools'],
         menu_icon = "book", 
         default_index = 0,
         styles = {
