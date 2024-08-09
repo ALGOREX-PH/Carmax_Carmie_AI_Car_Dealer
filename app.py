@@ -24,7 +24,7 @@ warnings.filterwarnings("ignore")
 st.set_page_config(page_title="Carmie by Generative Labs", page_icon=":car:", layout="wide")
 
 with st.sidebar :
-    st.image("images/carmax-logo.webp")
+    st.image("https://raw.githubusercontent.com/ALGOREX-PH/Carmax_Carmie_AI_Car_Dealer/main/Images/carmax-logo.webp")
     openai.api_key = st.text_input('Enter OpenAI API token:', type='password')
     if not (openai.api_key.startswith('sk-') and len(openai.api_key)==51):
         st.warning('Please enter your OpenAI API token!', icon='⚠️')
