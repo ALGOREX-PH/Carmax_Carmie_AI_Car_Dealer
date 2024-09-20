@@ -23,7 +23,7 @@ from streamlit_extras.mention import mention
 warnings.filterwarnings("ignore")
 st.set_page_config(page_title="Carmie : The AI Car Dealer", page_icon=":car:", layout="wide")
 
-VALID_USERNAME = "Genlabs"
+VALID_USERNAME = "Boost"
 VALID_PASSWORD = "FutureWrittenInCod3"
 
 def login() :
