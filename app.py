@@ -35,7 +35,7 @@ def login() :
         if username == VALID_USERNAME and password == VALID_PASSWORD :
            st.sidebar.success("Login successful!")
            st.session_state["authenticated"] = True
-           st.experimental_rerun()  # Rerun the app to proceed after login
+           st.rerun()  # Rerun the app to proceed after login
         else : 
            st.sidebar.error("Invalid username or password")
 
